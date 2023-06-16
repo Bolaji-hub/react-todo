@@ -1,17 +1,13 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import "./App.css";
+import ItemsWrapper from "./components/ItemsWrapper";
 
 function App() {
-  
   return (
-   
-      <div>
-        
-      </div>
-      
-  )
+    <div className="container">
+      <ItemsWrapper></ItemsWrapper>
+    </div>
+  );
 }
 
-export default App
+export default App;
