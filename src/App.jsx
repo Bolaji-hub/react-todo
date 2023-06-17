@@ -1,11 +1,11 @@
 import { useState } from "react";
 import "./App.css";
-import ItemsWrapper from "./components/ItemsWrapper";
+import TodoWrapper from "./components/TodoWrapper";
 
 function App() {
   return (
     <div className="container">
-      <ItemsWrapper></ItemsWrapper>
+      <TodoWrapper></TodoWrapper>
     </div>
   );
 }
