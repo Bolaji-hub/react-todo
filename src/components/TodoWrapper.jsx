@@ -3,10 +3,11 @@ import Form from "./TodoForm";
 import { v4 as uuidv4 } from "uuid";
 import Items from "./Todo";
 import EditItemForm from "./EditTodoForm";
+import useLocalStorage from "../Hooks/useLocalStorage";
 uuidv4();
 
 const TodoWrapper = () => {
-  const [todos, setTodos] = useState([]);
+  const [todos, setTodos] = useLocalStorage("my_todos", []);
 
   const addTodo = (todo) => {
     setTodos([
